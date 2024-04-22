@@ -1,0 +1,229 @@
+.header{
+    mix-blend-mode: unset;
+}
+.header__nav-link{
+    color: #242424;
+
+}
+
+img.header__logo-img{
+    display: block;
+  }
+  
+  .header__burger .header__burger-icon{
+    opacity: 1;
+  }
+
+body{
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    justify-content: end;
+
+}
+.empty{
+    width: 85%;
+    position: relative;
+    min-height: calc(100vh - 86px);
+    display: flex;
+    flex-direction: column;
+    gap: 569px;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.empty__article{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.construction__inner-link{
+    margin-left: 70px;
+    z-index: 1;
+}
+
+.empty__title{
+    font-size: 80px;
+    line-height: 120%;
+    margin-bottom: 23px;
+    font-weight: 400;
+}
+
+.empty__subtitle{
+    font-size: 34px;
+    font-weight: 400;
+}
+
+
+.empty__back-img{
+    position: absolute;
+    z-index: -1;
+}
+
+.construction__inner-link:hover > .link__arrow{
+    width: 260px;
+}
+.construction__inner-link:hover > svg{
+    transform: translateX(212px);
+}
+.link__arrow{
+    bottom: 5.5px;
+}
+
+@media(max-width: 1920px){
+    .empty{
+        min-height: calc(100vh - 66px);
+        gap: 469px;
+    
+    }
+    .empty__back-img{
+        width: 1766px;
+        top: -100px;
+        left: -90px;
+    }
+    .empty__title{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    .empty__subtitle{
+        font-size: 24px;
+    }
+    .empty__article{
+        margin-left: 55px;
+        margin-top: 0px;
+    }
+
+    .construction__inner-link:hover > .link__arrow{
+        width: 195px;
+    }
+    .construction__inner-link:hover > svg{
+        transform: translateX(150px);
+    }
+    .link__arrow{
+        bottom: 6px;
+    }
+    
+}
+@media(max-width: 1440px){
+    .empty{
+        min-height: calc(100vh - 51px);
+        gap: 369px;
+    
+    }
+    .empty__back-img{
+        width: 1306px;
+        top: -20px;
+        left: -50px;
+    }
+    .empty__title{
+        font-size: 44px;
+        margin-bottom: 13px;
+    }
+    .empty__subtitle{
+        font-size: 20px;
+    }
+    .empty__article{
+        margin-left: 42px;
+        margin-top: 50px;
+    }
+    .header__nav-link{
+        font-size: 15px;
+    }
+
+    .construction__inner-link:hover > .link__arrow{
+        width: 155px;
+    }
+    .construction__inner-link:hover > svg{
+        transform: translateX(110px);
+    }
+    .link__arrow{
+        bottom: 6px;
+    }
+    
+}
+@media(max-width: 1240px){
+    .empty{
+        min-height: calc(100vh - 44px);
+       
+    
+    }
+}
+@media(max-width: 768px){
+    .main{
+        justify-content: start;
+    }
+    .header__menu .header__nav-link{
+        color: #fff;
+        opacity: 1;
+        font-size: 42px;
+      }
+      .header__nav-list{
+        gap: 11px;
+      }
+      .header__menu .header__nav-link:hover{
+        color: #242424;
+      }
+    .header{
+        background: unset;
+        backdrop-filter: blur(10px);
+        opacity: 1 !important;
+    }
+    .header__burger.mobile{
+        color: #242424;
+    }
+    .empty{
+        min-height: 100vh;
+        justify-content: space-between;
+        align-items: start;
+        padding: 124px 20px 30px 20px;
+        width: 100%;
+    }
+    .empty__article{
+        margin: 0px;
+    }
+  
+    .construction__inner-link{
+        display: flex;
+        margin: 0;
+    }
+    .footer{
+        display: none;
+    }
+    .empty__title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .empty__subtitle{
+        font-size: 22px;
+    }
+    .empty__back-img{
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 820px;
+       
+    }
+
+    .construction__inner-link:hover > .link__arrow{
+        width: 172px;
+    }
+    .construction__inner-link:hover > svg{
+        transform: translateX(125px);
+    }
+    .link__arrow{
+        bottom: 6.5px;
+    }
+}
+
+@media(max-width: 450px){
+    .empty__back-img{
+       
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 650px;
+        height: 503px;
+    }
+}
