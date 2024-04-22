@@ -198,7 +198,7 @@ window.addEventListener('scroll', ()=>{
   
   header.classList.remove('unblend')
 
-  headerBurgerIconFixed.style.top = `${headerBurger.getBoundingClientRect().top+3}px`
+  headerBurgerIconFixed.style.top = `${headerBurger.getBoundingClientRect().top+1}px`
 })
 
 headerBurger.addEventListener('click', ()=>{
